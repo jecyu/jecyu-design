@@ -47,7 +47,6 @@
     "@babel/preset-env": "^7.24.5",
     "@babel/preset-react": "^7.24.1",
     "@babel/preset-typescript": "^7.24.1",
-    "@babel/runtime": "^7.24.5",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@testing-library/jest-dom": "^6.4.5",
@@ -74,7 +73,6 @@
     "lint-staged": "^15.2.2",
     "np": "^10.0.5",
     "prettier": "^3.2.5",
-    "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "serve": "^14.2.3",
@@ -82,6 +80,10 @@
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.24.5",
+    "prop-types": "^15.8.1"
   },
   "lint-staged": {
     "src/**/*.ts?(x)": [
@@ -106,7 +108,10 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "dependencies": {},
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
